@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuiler+ Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        h1 span.red { color: #ff2626; }
+        h1 span.yellow { color: #ffd100; }
+        h1 span.blue { color: #0073e6; }
+        
+        .tagline {
+            color: #8892b0;
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .card p, .card li {
+            color: #a8b2d1;
+            line-height: 1.7;
+        }
+        
+        .card ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+        
+        .card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ffd100;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff2626 0%, #ffd100 100%);
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 10px;
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 38, 38, 0.4);
+        }
+        
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-item h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .faq-item p {
+            color: #8892b0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #5a6a8a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><span class="red">Vui</span><span class="yellow">ler</span><span class="blue">+</span></h1>
+            <p class="tagline">Fast & Secure File Transfer</p>
+        </header>
+        
+        <div class="card">
+            <h2>📱 About Vuiler+</h2>
+            <p>Vuiler+ is the easiest way to transfer files between iOS devices using a simple 6-digit code. No accounts, no complicated setup – just share and receive.</p>
+            <ul>
+                <li>Transfer any file type (photos, videos, documents)</li>
+                <li>Real-time progress tracking</li>
+                <li>Secure and private transfers</li>
+                <li>Works on iPhone and iPad</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <h2>❓ Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>How do I transfer a file?</h3>
+                <p>Open Vuiler+, tap "Send", select your file, and share the generated 6-digit code with the receiver. They enter the code in "Receive" to download.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Is there a file size limit?</h3>
+                <p>No! Vuiler+ handles files of any size. Larger files may take longer to transfer depending on your internet connection.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Are my files secure?</h3>
+                <p>Yes. Transfer codes expire automatically and files are only accessible to those who have the code.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do both devices need to be on the same WiFi?</h3>
+                <p>No, Vuiler+ works over the internet, so devices can be anywhere in the world.</p>
+            </div>
+        </div>
+        
+        <div class="card" style="text-align: center;">
+            <h2>📧 Contact Support</h2>
+            <p>Having issues or questions? We're here to help!</p>
+            <a href="mailto:granadoanto123@gmail.com" class="contact-btn">Email Us</a>
+        </div>
+        
+        <footer class="footer">
+            <p>© 2024 Vuiler+. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
